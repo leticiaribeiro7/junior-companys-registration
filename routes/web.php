@@ -36,14 +36,12 @@ Route::get('/cadastro_ej', [FederacaoController::class, 'createEJ'])
 Route::post('/ej_created', [FederacaoController::class, 'storeEJ'])
 ->middleware(['auth'])->name('ej_created');
 
-Route::get('/busca_federacao', function (){
+Route::get('/busca_ej', function (){
     return view('busca');
-})->middleware(['auth'])->name('busca_federacao');
+})->middleware(['auth'])->name('busca_ej');
 
 Route::any('/resultados', [FederacaoController::class, 'searchEJ'])
 ->middleware(['auth'])->name('resultados');
 
-Route::any('/resultados_por_fed', [FederacaoController::class, 'listByFed'])
-->middleware(['auth'])->name('resultados_por_fed');
 
 require __DIR__.'/auth.php';

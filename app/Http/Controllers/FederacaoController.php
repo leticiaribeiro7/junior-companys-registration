@@ -122,10 +122,4 @@ class FederacaoController extends Controller
         ]);
     }
 
-    public function listByFed(Request $request){
-
-        // $empresasjuniores = Federacao::where('nome', 'LIKE', "%{$request->search}%")
-        //             ->paginate();
-        // return view('dashboard', compact('empresasjuniores'));
-    }
 }

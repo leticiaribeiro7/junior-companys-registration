@@ -1,4 +1,5 @@
 <x-app-layout>
+    <link rel="stylesheet" href="assets/css/frontpage.css">
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
             {{ __('Bem vindo(a)!') }}
@@ -16,6 +17,7 @@
                         <thead>
                             <th>Empresas Juniores</th>
                             <th>&nbsp;</th>
+
                         </thead>
                         <!-- Table Body -->
                         <tbody>

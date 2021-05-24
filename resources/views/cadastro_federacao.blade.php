@@ -1,23 +1,22 @@
 <x-app-layout>
+    <link rel="stylesheet" href="assets/css/frontpage.css">
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Dashboard') }}
-        </h2>
     </x-slot>
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 bg-white border-b border-gray-200">
-                    <h3> CADASTRO DA FEDERAÇÃO </h3>
+                    <h3> Cadastro Federação </h3>
+                    <br>
                     <form action="{{ route('federacao_created') }}" method="POST">
                         @csrf
                         <div class="mb-3">
-                        <label for="nome" class="form-label">Nome</label>
+                        <label for="nome" class="form-label" id="nome-fed2">Nome</label>
                         <input type="text" name="nome">
                         </div>
-                        <div class="mb-3">
-                            <label for="estado" class="form-label">Estado</label>
+                        <div class="mb-3" id="estado">
+                            <label for="estado" class="form-label" id="nome-estado">Estado</label>
                             <select aria-label=".form-select-sm example" name="estado">
                             <option selected>Selecione</option>
                             <option value="Acre">Acre</option>

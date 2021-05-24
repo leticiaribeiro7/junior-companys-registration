@@ -6,7 +6,7 @@
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center">
                     <a href="{{ route('dashboard') }}">
-                        <x-application-logo class="block h-10 w-auto fill-current text-gray-600" />
+                        <img src="https://ecompjr.com.br/images/logomarca.png" class="block h-10 w-auto fill-current text-gray-600" />
                     </a>
                 </div>
 
@@ -18,7 +18,7 @@
                 </div>
 
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('busca_federacao')" :active="request()->routeIs('busca_federacao')">
+                    <x-nav-link :href="route('busca_ej')" :active="request()->routeIs('busca_federacao')">
                         {{ __('Busca') }}
                     </x-nav-link>
                 </div>
